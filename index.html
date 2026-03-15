@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="kn">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>GNE ಅಪ್ಡೇಟ್ಸ್</title>
+
+<style>
+
+/* ===== GENERAL ===== */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+background:#f2f2f2;
+color:#222;
+}
+
+/* COMMON WRAPPER */
+
+.wrap{
+width:1200px;
+margin:auto;
+}
+
+/* ===== MAIN LAYOUT ===== */
+
+.container{
+width:1200px;
+margin:auto;
+padding:20px 0;
+display:flex;
+gap:20px;
+}
+
+/* ===== LEFT CONTENT ===== */
+
+.content{
+flex:3;
+}
+
+/* Latest News */
+
+.section-title{
+background:#e60000;
+color:#fff;
+padding:10px;
+margin-bottom:15px;
+}
+
+.news-grid{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:15px;
+}
+
+.news-card{
+background:#fff;
+border-radius:4px;
+overflow:hidden;
+}
+
+.news-card img{
+width:100%;
+height:140px;
+object-fit:cover;
+}
+
+.news-card h4{
+padding:10px;
+font-size:15px;
+}
+
+/* ===== VIDEO ===== */
+
+.video-box{
+margin-top:25px;
+background:#fff;
+padding:15px;
+}
+
+.video-box video{
+width:100%;
+}
+
+/* ===== SIDEBAR ===== */
+
+.sidebar{
+flex:1;
+}
+
+.trending{
+background:#fff;
+padding:15px;
+margin-bottom:20px;
+}
+
+.trending h3{
+margin-bottom:10px;
+}
+
+.trending ol{
+padding-left:20px;
+}
+
+.trending li{
+margin-bottom:8px;
+}
+
+.ad-box{
+background:#ddd;
+text-align:center;
+padding:40px 10px;
+font-weight:bold;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- HEADER -->
+
+<?php include 'header.html'; ?>
+
+
+<!-- MAIN CONTENT -->
+
+<div class="container">
+
+<div class="content">
+
+<div class="section-title">
+ಇತ್ತೀಚಿನ ಸುದ್ದಿ
+</div>
+
+<div class="news-grid">
+
+<div class="news-card">
+<img src="news1.jpg">
+<h4>ಆರ್ಥಿಕ ವೃದ್ಧಿ ಹೊಸ ಎತ್ತರ ತಲುಪಿದೆ</h4>
+</div>
+
+<div class="news-card">
+<img src="news2.jpg">
+<h4>ನಗರ ಮಾರುಕಟ್ಟೆಯಲ್ಲಿ ಭಾರಿ ಬೆಂಕಿ</h4>
+</div>
+
+<div class="news-card">
+<img src="news3.jpg">
+<h4>ಸಿನಿಮಾ ತಾರೆಯ ಕಾರ್ಯಕ್ರಮ ಗಮನ ಸೆಳೆಯಿತು</h4>
+</div>
+
+<div class="news-card">
+<img src="news4.jpg">
+<h4>ವಿಧಾನಸಭೆಯಲ್ಲಿ ಹೊಸ ಕಾನೂನು ಅಂಗೀಕಾರ</h4>
+</div>
+
+</div>
+</div>
+
+<div class="sidebar">
+
+<div class="trending">
+
+<h3>ಪ್ರಸ್ತುತ ಟ್ರೆಂಡಿಂಗ್</h3>
+
+<ol>
+<li>ರಾಜಕೀಯ ನಾಯಕ ಪಕ್ಷಕ್ಕೆ ರಾಜೀನಾಮೆ</li>
+<li>ರಾಜ್ಯದಲ್ಲಿ ಪ್ರವಾಹ ಹಾವಳಿ</li>
+<li>ನಗರದಲ್ಲಿ ಅಪರಾಧ ಪ್ರಮಾಣ ಹೆಚ್ಚಳ</li>
+<li>ಬಾಲಿವುಡ್ ತಾರೆ ಸಂದರ್ಶನ</li>
+<li>ಹೊಸ ಶಿಕ್ಷಣ ನೀತಿ ಘೋಷಣೆ</li>
+<li>ಹೊಸ ಶಿಕ್ಷಣ ನೀತಿ ಘೋಷಣೆ</li>
+</ol>
+
+</div>
+
+<div class="ad-box">
+ನಿಮ್ಮ ಜಾಹೀರಾತು ಇಲ್ಲಿ
+</div>
+
+</div>
+
+</div>
+
+<!-- FOOTER -->
+
+<?php include 'footer.html'; ?>
+
+</body>
+</html>

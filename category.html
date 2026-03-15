@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="kn">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>ರಾಜ್ಯ ಸುದ್ದಿ</title>
+
+<style>
+
+/* ===== GENERAL ===== */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+background:#f2f2f2;
+color:#222;
+}
+
+/* ===== PAGE TITLE ===== */
+
+.page-title{
+background:#1e4c8f;
+color:#fff;
+padding:30px 0;
+}
+
+.page-title h1{
+width:1200px;
+margin:auto;
+font-size:36px;
+}
+
+/* ===== LAYOUT ===== */
+
+.container{
+width:1200px;
+margin:auto;
+display:flex;
+gap:20px;
+padding:20px 0;
+}
+
+.content{
+flex:3;
+}
+
+.sidebar{
+flex:1;
+}
+
+/* ===== FEATURED NEWS ===== */
+
+.featured{
+background:#fff;
+margin-bottom:20px;
+border-radius:4px;
+overflow:hidden;
+}
+
+.featured img{
+width:100%;
+height:350px;
+object-fit:cover;
+}
+
+.featured h2{
+padding:15px;
+font-size:26px;
+}
+
+.featured p{
+padding:0 15px 15px;
+color:#555;
+}
+
+/* ===== SECTION TITLE ===== */
+
+.section-title{
+background:#e60000;
+color:#fff;
+padding:10px;
+margin-bottom:15px;
+font-weight:bold;
+}
+
+/* ===== NEWS GRID ===== */
+
+.news-grid{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:15px;
+}
+
+.news-card{
+background:#fff;
+border-radius:4px;
+overflow:hidden;
+}
+
+.news-card img{
+width:100%;
+height:150px;
+object-fit:cover;
+}
+
+.news-card h4{
+padding:10px;
+font-size:16px;
+}
+
+/* ===== SIDEBAR ===== */
+
+.ad-box{
+background:#ddd;
+padding:40px 10px;
+text-align:center;
+margin-bottom:20px;
+font-weight:bold;
+}
+
+.latest-list{
+background:#fff;
+padding:15px;
+}
+
+.latest-list h3{
+margin-bottom:10px;
+}
+
+.latest-item{
+display:flex;
+gap:10px;
+margin-bottom:12px;
+}
+
+.latest-num{
+background:#e60000;
+color:#fff;
+width:24px;
+height:24px;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:12px;
+}
+
+.video-box{
+background:#fff;
+padding:15px;
+margin-top:20px;
+}
+
+.video-box video{
+width:100%;
+}
+
+</style>
+
+</head>
+
+<body>
+
+    <!-- HEADER -->
+
+<?php include 'header.html'; ?>
+
+
+<!-- CATEGORY TITLE -->
+
+<div class="page-title">
+<h1>ರಾಜ್ಯ ಸುದ್ದಿ</h1>
+</div>
+
+
+<!-- MAIN CONTENT -->
+
+<div class="container">
+
+
+<!-- LEFT SIDE -->
+
+<div class="content">
+
+<!-- FEATURED NEWS -->
+
+<div class="featured">
+
+<img src="flood.jpg">
+
+<h2>ಅನೇಕ ಜಿಲ್ಲೆಗಳಲ್ಲಿ ಭಾರೀ ಪ್ರವಾಹ</h2>
+
+<p>
+ಭಾರೀ ಮಳೆಯಿಂದ ಹಲವು ಜಿಲ್ಲೆಗಳಲ್ಲಿ ಪ್ರವಾಹ ಪರಿಸ್ಥಿತಿ ಉಂಟಾಗಿದೆ.
+ಜನಜೀವನ ಸಂಪೂರ್ಣ ಅಸ್ತವ್ಯಸ್ತವಾಗಿದೆ.
+</p>
+
+</div>
+
+
+<!-- LATEST NEWS -->
+
+<div class="section-title">
+ಇತ್ತೀಚಿನ ಸುದ್ದಿ
+</div>
+
+
+<div class="news-grid">
+
+<div class="news-card">
+<img src="news1.jpg">
+<h4>ರಾಜಕೀಯ ನಾಯಕ ರಾಜೀನಾಮೆ</h4>
+</div>
+
+<div class="news-card">
+<img src="news2.jpg">
+<h4>ಹೊಸ ಶಿಕ್ಷಣ ನೀತಿ ಘೋಷಣೆ</h4>
+</div>
+
+<div class="news-card">
+<img src="news3.jpg">
+<h4>ರಾಸಾಯನಿಕ ಕಾರ್ಖಾನೆಯಲ್ಲಿ ಬೆಂಕಿ</h4>
+</div>
+
+<div class="news-card">
+<img src="news4.jpg">
+<h4>ನಗರದಲ್ಲಿ ಭಾರೀ ಟ್ರಾಫಿಕ್ ಜಾಮ್</h4>
+</div>
+
+</div>
+
+</div>
+
+
+<!-- SIDEBAR -->
+
+<div class="sidebar">
+
+<div class="ad-box">
+Your Ad Here
+</div>
+
+
+<div class="latest-list">
+
+<h3>Latest News</h3>
+
+<div class="latest-item">
+<div class="latest-num">1</div>
+<div>ರಾಜಕೀಯ ಸಂಕಷ್ಟ ಹೆಚ್ಚಳ</div>
+</div>
+
+<div class="latest-item">
+<div class="latest-num">2</div>
+<div>ರಾಜ್ಯದಲ್ಲಿ ಹೊಸ ಯೋಜನೆ</div>
+</div>
+
+<div class="latest-item">
+<div class="latest-num">3</div>
+<div>ಕಾರ್ಖಾನೆಯಲ್ಲಿ ಬೆಂಕಿ</div>
+</div>
+
+<div class="latest-item">
+<div class="latest-num">4</div>
+<div>ನಗರದಲ್ಲಿ ಟ್ರಾಫಿಕ್ ಸಮಸ್ಯೆ</div>
+</div>
+
+<div class="latest-item">
+<div class="latest-num">5</div>
+<div>ಹೊಸ ಕಲ್ಯಾಣ ಯೋಜನೆ</div>
+</div>
+
+</div>
+
+
+<div class="video-box">
+
+<h3>ವೀಡಿಯೊ ನೋಡಿ</h3>
+
+<video controls>
+<source src="video.mp4" type="video/mp4">
+</video>
+
+</div>
+
+</div>
+
+
+</div>
+
+<!-- FOOTER -->
+
+<?php include 'footer.html'; ?>
+
+</body>
+
+</html>

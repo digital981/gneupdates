@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="kn">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<title>GNE ಅಪ್ಡೇಟ್ಸ್</title>
+
+<style>
+
+/* ===== BASIC RESET ===== */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+background:#f2f2f2;
+}
+
+/* ===== COMMON CONTAINER ===== */
+
+.container{
+width:1200px;
+margin:auto;
+}
+
+/* ===== HEADER ===== */
+
+.top-header{
+background:#0c2d55;
+color:#fff;
+}
+
+.header-inner{
+width:1200px;
+margin:auto;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:12px 0;
+}
+
+.logo{
+font-size:28px;
+font-weight:bold;
+}
+
+.logo span{
+background:#e60000;
+padding:3px 6px;
+margin-left:6px;
+}
+
+.social{
+display:flex;
+gap:12px;
+}
+
+.social a{
+color:#fff;
+font-size:18px;
+text-decoration:none;
+}
+
+/* ===== NAVIGATION ===== */
+
+.navbar{
+background:#102f5a;
+}
+
+.nav-inner{
+width:1200px;
+margin:auto;
+}
+
+.navbar ul{
+display:flex;
+list-style:none;
+padding:10px 0;
+}
+
+.navbar li{
+margin-right:22px;
+}
+
+.navbar a{
+color:#fff;
+text-decoration:none;
+font-weight:600;
+font-size:15px;
+}
+
+/* ===== BREAKING NEWS ===== */
+
+.breaking{
+background:#d60000;
+color:#fff;
+}
+
+.breaking-inner{
+width:1200px;
+margin:auto;
+padding:8px 0;
+font-weight:bold;
+}
+
+/* ===== HERO ===== */
+
+.hero{
+width:1200px;
+margin:20px auto;
+height:420px;
+background:url('hero.jpg') center/cover no-repeat;
+display:flex;
+align-items:flex-end;
+}
+
+.hero-text{
+background:rgba(0,0,0,0.6);
+color:#fff;
+padding:20px;
+width:100%;
+}
+
+.hero-text h1{
+font-size:34px;
+margin-bottom:6px;
+}
+
+.hero-text p{
+font-size:16px;
+}
+
+/* ===== CATEGORY BAR ===== */
+
+.category-bar{
+width:1200px;
+margin:auto;
+display:flex;
+background:#1d3f73;
+color:#fff;
+}
+
+.category-bar div{
+flex:1;
+padding:12px;
+text-align:center;
+border-right:1px solid #ffffff30;
+}
+
+/* ========================= */
+/* ===== MOBILE DESIGN ===== */
+/* ========================= */
+
+@media (max-width:1200px){
+
+.header-inner,
+.nav-inner,
+.breaking-inner,
+.container,
+.hero,
+.category-bar{
+width:95%;
+}
+
+}
+
+@media (max-width:768px){
+
+/* header */
+
+.header-inner{
+flex-direction:column;
+gap:10px;
+}
+
+/* menu */
+
+.navbar ul{
+flex-wrap:wrap;
+justify-content:center;
+}
+
+.navbar li{
+margin:5px 10px;
+}
+
+/* hero */
+
+.hero{
+height:260px;
+}
+
+.hero-text h1{
+font-size:22px;
+}
+
+.hero-text p{
+font-size:14px;
+}
+
+/* category */
+
+.category-bar{
+flex-direction:column;
+}
+
+.category-bar div{
+border-bottom:1px solid #ffffff30;
+border-right:none;
+}
+
+}
+
+.social a{
+color:#fff;
+font-size:18px;
+text-decoration:none;
+margin-left:12px;
+transition:0.3s;
+}
+
+.social a:hover{
+color:#ffcc00;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- HEADER -->
+
+<header class="top-header">
+
+<div class="header-inner">
+
+<div class="logo">
+<a href="#">
+<img src="logo.png" alt="GNE ಅಪ್ಡೇಟ್ಸ್">
+</a>
+</div>
+
+<div class="social">
+
+<a href="#" target="_blank">
+<i class="fab fa-facebook-f"></i>
+</a>
+
+<a href="#" target="_blank">
+<i class="fab fa-twitter"></i>
+</a>
+
+<a href="#" target="_blank">
+<i class="fab fa-youtube"></i>
+</a>
+
+<a href="#" target="_blank">
+<i class="fab fa-instagram"></i>
+</a>
+
+</div>
+
+</div>
+
+</header>
+
+
+<!-- NAVIGATION -->
+
+<nav class="navbar">
+
+<div class="nav-inner">
+
+<ul>
+<li><a href="#">ಮುಖಪುಟ</a></li>
+<li><a href="#">ಇತ್ತೀಚಿನ ಸುದ್ದಿ</a></li>
+<li><a href="#">ರಾಜ್ಯ</a></li>
+<li><a href="#">ರಾಷ್ಟ್ರೀಯ</a></li>
+<li><a href="#">ರಾಜಕೀಯ</a></li>
+<li><a href="#">ಸಿನಿಮಾ</a></li>
+<li><a href="#">ಕ್ರೀಡೆ</a></li>
+<li><a href="#">ಸಂಸ್ಕೃತಿಕ</a></li>
+<li><a href="#">ಸಾಹಿತ್ಯ</a></li>
+<li><a href="#">ವೈರಲ್</a></li>
+</ul>
+
+</div>
+
+</nav>
+
+
+<!-- BREAKING NEWS -->
+
+<div class="breaking">
+
+<div class="breaking-inner">
+
+<span class="breaking-label"></span>
+
+<marquee behavior="scroll" direction="left" scrollamount="6">
+
+ರಾಜ್ಯದಲ್ಲಿ ದೊಡ್ಡ ರಾಜಕೀಯ ಸಂಕಷ್ಟ • 
+ಮಂಗಳೂರು ನಗರದಲ್ಲಿ ಭಾರಿ ಮಳೆ • 
+ಕರ್ನಾಟಕದಲ್ಲಿ ಹೊಸ ಯೋಜನೆ ಘೋಷಣೆ • 
+ವಿಧಾನಸಭೆಯಲ್ಲಿ ಮಹತ್ವದ ನಿರ್ಧಾರ • 
+ಕ್ರಿಕೆಟ್ ತಂಡ ಭರ್ಜರಿ ಜಯ
+
+</marquee>
+
+</div>
+
+</div>
+
+
+
+
+</body>
+</html>
