@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="kn">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>GNE ಅಪ್ಡೇಟ್ಸ್</title>
+
+<style>
+
+/* ===== GENERAL ===== */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+background:#f2f2f2;
+color:#222;
+}
+
+/* ===== HEADER ===== */
+
+.top-header{
+background:#0c2d55;
+color:#fff;
+padding:12px 20px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.logo{
+font-size:28px;
+font-weight:bold;
+}
+
+.logo span{
+background:#e60000;
+padding:3px 6px;
+margin-left:5px;
+}
+
+.social a{
+color:#fff;
+margin-left:12px;
+font-size:18px;
+text-decoration:none;
+}
+
+/* ===== MENU ===== */
+
+.navbar{
+background:#102f5a;
+}
+
+.navbar ul{
+display:flex;
+list-style:none;
+padding:10px;
+}
+
+.navbar li{
+margin-right:20px;
+}
+
+.navbar a{
+color:#fff;
+text-decoration:none;
+font-weight:600;
+}
+
+/* ===== BREAKING ===== */
+
+.breaking{
+background:#d60000;
+color:#fff;
+padding:8px 20px;
+font-weight:bold;
+}
+
+/* ===== HERO ===== */
+
+.hero{
+position:relative;
+height:420px;
+background:url('hero.jpg') center/cover no-repeat;
+color:#fff;
+display:flex;
+align-items:flex-end;
+}
+
+.hero-text{
+background:rgba(0,0,0,0.6);
+padding:20px;
+width:100%;
+}
+
+.hero-text h1{
+font-size:34px;
+margin-bottom:8px;
+}
+
+/* ===== CATEGORY BAR ===== */
+
+.category-bar{
+display:flex;
+background:#1d3f73;
+color:#fff;
+}
+
+.category-bar div{
+flex:1;
+padding:12px;
+text-align:center;
+border-right:1px solid #fff3;
+}
+
+/* ===== MAIN LAYOUT ===== */
+
+.container{
+width:1200px;
+margin:auto;
+padding:20px;
+display:flex;
+gap:20px;
+}
+
+/* ===== LEFT CONTENT ===== */
+
+.content{
+flex:3;
+}
+
+/* Latest News */
+
+.section-title{
+background:#e60000;
+color:#fff;
+padding:10px;
+margin-bottom:15px;
+}
+
+.news-grid{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:15px;
+}
+
+.news-card{
+background:#fff;
+border-radius:4px;
+overflow:hidden;
+}
+
+.news-card img{
+width:100%;
+height:140px;
+object-fit:cover;
+}
+
+.news-card h4{
+padding:10px;
+font-size:15px;
+}
+
+/* ===== VIDEO ===== */
+
+.video-box{
+margin-top:25px;
+background:#fff;
+padding:15px;
+}
+
+.video-box video{
+width:100%;
+}
+
+/* ===== SIDEBAR ===== */
+
+.sidebar{
+flex:1;
+}
+
+.trending{
+background:#fff;
+padding:15px;
+margin-bottom:20px;
+}
+
+.trending h3{
+margin-bottom:10px;
+}
+
+.trending ol{
+padding-left:20px;
+}
+
+.trending li{
+margin-bottom:8px;
+}
+
+.ad-box{
+background:#ddd;
+text-align:center;
+padding:40px 10px;
+font-weight:bold;
+}
+
+/* ===== FOOTER ===== */
+
+.footer{
+background:#0c2d55;
+color:#fff;
+padding:30px 0;
+margin-top:40px;
+}
+
+.footer-container{
+width:1200px;
+margin:auto;
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:20px;
+}
+
+.footer h4{
+margin-bottom:10px;
+}
+
+.footer a{
+color:#ddd;
+display:block;
+text-decoration:none;
+margin-bottom:5px;
+}
+
+.copyright{
+text-align:center;
+margin-top:20px;
+font-size:14px;
+}
+
+/* ========================= */
+/* ===== RESPONSIVE CSS ==== */
+/* ========================= */
+
+@media (max-width:1200px){
+
+.container{
+width:95%;
+}
+
+.footer-container{
+width:95%;
+}
+
+}
+
+/* Tablet */
+
+@media (max-width:900px){
+
+.container{
+flex-direction:column;
+}
+
+.news-grid{
+grid-template-columns:repeat(2,1fr);
+}
+
+.category-bar{
+flex-wrap:wrap;
+}
+
+.category-bar div{
+flex:50%;
+border-bottom:1px solid #fff3;
+}
+
+}
+
+/* Mobile */
+
+@media (max-width:600px){
+
+.top-header{
+flex-direction:column;
+align-items:flex-start;
+gap:10px;
+}
+
+.navbar ul{
+flex-wrap:wrap;
+}
+
+.navbar li{
+margin:5px 10px;
+}
+
+.news-grid{
+grid-template-columns:1fr;
+}
+
+.logo{
+font-size:22px;
+}
+
+.footer-container{
+grid-template-columns:1fr;
+gap:15px;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- HEADER -->
+
+<div class="top-header">
+
+<div class="logo">
+<a href="#">
+<img src="https://prajapara.com/wp-content/uploads/2026/03/ddd.png" alt="GNE ಅಪ್ಡೇಟ್ಸ್">
+</a>
+</div>
+
+<div class="social">
+<a href="#">FB</a>
+<a href="#">TW</a>
+<a href="#">YT</a>
+<a href="#">IG</a>
+</div>
+
+</div>
+
+<!-- MENU -->
+
+<div class="navbar">
+<ul>
+<li><a href="#">ಮುಖಪುಟ</a></li>
+<li><a href="#">ಇತ್ತೀಚಿನ ಸುದ್ದಿ</a></li>
+<li><a href="#">ರಾಜ್ಯ</a></li>
+<li><a href="#">ರಾಷ್ಟ್ರೀಯ</a></li>
+<li><a href="#">ವೀಡಿಯೊ</a></li>
+<li><a href="#">ಸಂಪರ್ಕ</a></li>
+</ul>
+</div>
+
+<!-- BREAKING -->
+
+<div class="breaking">
+ತಾಜಾ ಸುದ್ದಿ: ರಾಜ್ಯದಲ್ಲಿ ದೊಡ್ಡ ರಾಜಕೀಯ ಸಂಕಷ್ಟ - ಇನ್ನಷ್ಟು ವಿವರಗಳು ಶೀಘ್ರದಲ್ಲೇ...
+</div>
+
+<!-- CATEGORY -->
+
+<div class="category-bar">
+<div>ರಾಜಕೀಯ</div>
+<div>ರಾಜ್ಯ ಸುದ್ದಿ</div>
+<div>ಅಪರಾಧ</div>
+</div>
+
+<!-- MAIN CONTENT -->
+
+<div class="container">
+
+<div class="content">
+
+<div class="section-title">
+ಇತ್ತೀಚಿನ ಸುದ್ದಿ
+</div>
+
+<div class="news-grid">
+
+<div class="news-card">
+<img src="news1.jpg">
+<h4>ಆರ್ಥಿಕ ವೃದ್ಧಿ ಹೊಸ ಎತ್ತರ ತಲುಪಿದೆ</h4>
+</div>
+
+<div class="news-card">
+<img src="news2.jpg">
+<h4>ನಗರ ಮಾರುಕಟ್ಟೆಯಲ್ಲಿ ಭಾರಿ ಬೆಂಕಿ</h4>
+</div>
+
+<div class="news-card">
+<img src="news3.jpg">
+<h4>ಸಿನಿಮಾ ತಾರೆಯ ಕಾರ್ಯಕ್ರಮ ಗಮನ ಸೆಳೆಯಿತು</h4>
+</div>
+
+<div class="news-card">
+<img src="news4.jpg">
+<h4>ವಿಧಾನಸಭೆಯಲ್ಲಿ ಹೊಸ ಕಾನೂನು ಅಂಗೀಕಾರ</h4>
+</div>
+
+</div>
+
+<div class="video-box">
+
+<h3>ನಮ್ಮ ವೀಡಿಯೊಗಳನ್ನು ವೀಕ್ಷಿಸಿ</h3>
+
+<video controls>
+<source src="newsvideo.mp4" type="video/mp4">
+</video>
+
+</div>
+
+</div>
+
+<!-- SIDEBAR -->
+
+<div class="sidebar">
+
+<div class="trending">
+
+<h3>ಪ್ರಸ್ತುತ ಟ್ರೆಂಡಿಂಗ್</h3>
+
+<ol>
+<li>ರಾಜಕೀಯ ನಾಯಕ ಪಕ್ಷಕ್ಕೆ ರಾಜೀನಾಮೆ</li>
+<li>ರಾಜ್ಯದಲ್ಲಿ ಪ್ರವಾಹ ಹಾವಳಿ</li>
+<li>ನಗರದಲ್ಲಿ ಅಪರಾಧ ಪ್ರಮಾಣ ಹೆಚ್ಚಳ</li>
+<li>ಬಾಲಿವುಡ್ ತಾರೆ ಸಂದರ್ಶನ</li>
+<li>ಹೊಸ ಶಿಕ್ಷಣ ನೀತಿ ಘೋಷಣೆ</li>
+</ol>
+
+</div>
+
+<div class="ad-box">
+ನಿಮ್ಮ ಜಾಹೀರಾತು ಇಲ್ಲಿ
+</div>
+
+</div>
+
+</div>
+
+<!-- FOOTER -->
+
+<div class="footer">
+
+<div class="footer-container">
+
+<div>
+<h4>GNE ಅಪ್ಡೇಟ್ಸ್ ಬಗ್ಗೆ</h4>
+<p>ದೇಶದ ವಿವಿಧ ಭಾಗಗಳಿಂದ ಇತ್ತೀಚಿನ ಸುದ್ದಿ ಮತ್ತು ಅಪ್ಡೇಟ್ಸ್.</p>
+</div>
+
+<div>
+<h4>ತ್ವರಿತ ಲಿಂಕ್‌ಗಳು</h4>
+<a href="#">ಮುಖಪುಟ</a>
+<a href="#">ಇತ್ತೀಚಿನ ಸುದ್ದಿ</a>
+<a href="#">ವೀಡಿಯೊಗಳು</a>
+</div>
+
+<div>
+<h4>ನಮ್ಮನ್ನು ಅನುಸರಿಸಿ</h4>
+<a href="#">ಫೇಸ್ಬುಕ್</a>
+<a href="#">ಟ್ವಿಟರ್</a>
+<a href="#">ಯೂಟ್ಯೂಬ್</a>
+</div>
+
+<div>
+<h4>ಸಂಪರ್ಕ</h4>
+<p>Email: info@gneupdates.com</p>
+</div>
+
+</div>
+
+<div class="copyright">
+© 2024 GNE ಅಪ್ಡೇಟ್ಸ್. ಎಲ್ಲಾ ಹಕ್ಕುಗಳು ಕಾಯ್ದಿರಿಸಲಾಗಿದೆ.
+</div>
+
+</div>
+
+</body>
+</html>
